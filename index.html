@@ -1,86 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kf</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        button {
-            background-color: white;
-            color: black;
-            border: none;
-            padding: 15px 30px;
-            margin: 10px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-            button:hover {
-                background-color: gray;
-            }
-
-        .header {
-            position: absolute;
-            top: 100px; /* Lowered position */
-            width: 100%;
-            text-align: center;
-            font-size: 48px; /* Larger font size */
-        }
-    </style>
+    <title>Fitness Philosophy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">kf</div>
-    <div class="container">
-        <button onclick="location.href='services.html'">Services</button>
-        <button onclick="location.href='statements.html'">Statements</button>
-    </div>
-
-    <!-- Services Page -->
-    <div id="services" style="display:none;">
-        <div class="container">
-            <h1>Services</h1>
-            <p>Code You A Website $10 BTC</p>
-            <p>Code You A Program $10 BTC</p>
-            <button onclick="location.href='index.html'">Back</button>
-        </div>
-    </div>
-
-    <!-- Statements Page -->
-    <div id="statements" style="display:none;">
-        <div class="container">
-            <h1>Statements</h1>
-            <p>Customize this page as needed.</p>
-            <button onclick="location.href='index.html'">Back</button>
-        </div>
-    </div>
-
-    <script>
-        // JavaScript to handle navigation
-        document.querySelectorAll('button').forEach(button => {
-            button.addEventListener('click', function () {
-                const target = this.getAttribute('onclick').split("'")[1];
-                document.querySelectorAll('div[id]').forEach(div => {
-                    div.style.display = 'none';
-                });
-                document.getElementById(target.split('.')[0]).style.display = 'block';
-            });
-        });
-    </script>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <button onclick="location.href='workout.html'">Workout</button>
+    </main>
 </body>
 </html>
