@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Ensure Scrollability */
+html {
+    overflow-y: auto;
+}
+
+/* Style the Header */
+header {
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+}
+
+    /* Style the Title */
+    header h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+/* Style for Main Page */
+main {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+    /* Stylish Workout Button */
+    main button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 12px 24px;
+        background: red;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+        main button:hover {
+            background: darkred;
+            transform: scale(1.05);
+        }
+
+/* Back Button Styling */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+    .back-button:hover {
+        background: darkred;
+        transform: scale(1.05);
+    }
+
+/* Quote Styling */
+.quote {
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Center Content */
+main p, main h2 {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Styled Headings */
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Styled Paragraphs */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Animation for Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
